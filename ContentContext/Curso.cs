@@ -5,7 +5,7 @@ namespace SiteDeCursos.ContentContext
 {
     public class Curso : Conteudo
     {
-        public Curso()
+        public Curso(string titulo, string url) : base(titulo, url)
         {
             Modulos = new List<Modulo>();
         }
