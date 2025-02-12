@@ -2,7 +2,7 @@ using System.Collections.Generic;
 
 namespace SiteDeCursos.ContentContext
 {
-    public class Modulo
+    public class Modulo : ConteudoBase
     {
         public Modulo()
         {

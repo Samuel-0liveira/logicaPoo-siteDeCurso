@@ -2,7 +2,7 @@ using SiteDeCursos.ContentContext.Enums;
 
 namespace SiteDeCursos.ContentContext
 {
-    public class Aula
+    public class Aula : ConteudoBase
     {
         public int Ordem { get; set; }
         public required string Titulo { get; set; }

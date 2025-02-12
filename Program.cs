@@ -36,9 +36,9 @@ namespace SiteDeCursos
 
             var carreiraDotnet = new Carreira("Especialista .NET", "especialista-dotnet");
 
-            var itemDeCarreira2 = new ItemDeCarreira(2, "Aprenda POO", "O segundo passo para se tornar um especialista .NET", cursoCsharp);
-            var itemDeCarreira = new ItemDeCarreira(1, "Comece por aqui", "O primeiro passo para se tornar um especialista .NET", cursoCsharp);
-            var itemDeCarreira3 = new ItemDeCarreira(3, "Aprenda .NET", "O terceiro passo para se tornar um especialista .NET", cursoCsharp);
+            var itemDeCarreira2 = new ItemDeCarreira(2, "Aprenda POO", " ", cursoPOO);
+            var itemDeCarreira = new ItemDeCarreira(1, "Comece por aqui", "", cursoCsharp);
+            var itemDeCarreira3 = new ItemDeCarreira(3, "Aprenda .NET", "", cursoAspNet);
             carreiraDotnet.Items.Add(itemDeCarreira2);
             carreiraDotnet.Items.Add(itemDeCarreira3);
             carreiraDotnet.Items.Add(itemDeCarreira);
@@ -51,6 +51,8 @@ namespace SiteDeCursos
                 foreach(var item in carreira.Items.OrderBy(x => x.Ordem))
                 {
                     Console.WriteLine($"{item.Ordem} - {item.Titulo}");
+                    Console.WriteLine(item.Curso.Titulo);
+                    Console.WriteLine(item.Curso.Nivel);
                 }
             }
         }
