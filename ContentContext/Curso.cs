@@ -9,7 +9,7 @@ namespace SiteDeCursos.ContentContext
         {
             Modulos = new List<Modulo>();
         }
-        public required string Tag { get; set; }
+        public string? Tag { get; set; }
         public IList<Modulo> Modulos { get; set; }
         public int DuracaoEmMinutos { get; set; }
         public ENivelConteudo Nivel { get; set; }
