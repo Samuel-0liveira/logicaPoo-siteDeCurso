@@ -1,6 +1,6 @@
 using SiteDeCursos.NotificationContext;
 
-namespace SiteDeCursos.ContentContext
+namespace SiteDeCursos.SharedContext
 {
     public abstract class ConteudoBase : Notificador
     {

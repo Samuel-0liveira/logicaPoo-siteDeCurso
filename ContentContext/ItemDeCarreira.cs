@@ -1,4 +1,5 @@
 using SiteDeCursos.NotificationContext;
+using SiteDeCursos.SharedContext;
 
 namespace SiteDeCursos.ContentContext
 {

@@ -1,4 +1,5 @@
 using SiteDeCursos.ContentContext.Enums;
+using SiteDeCursos.SharedContext;
 
 namespace SiteDeCursos.ContentContext
 {

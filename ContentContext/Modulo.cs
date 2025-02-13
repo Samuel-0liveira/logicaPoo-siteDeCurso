@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using SiteDeCursos.SharedContext;
 
 namespace SiteDeCursos.ContentContext
 {

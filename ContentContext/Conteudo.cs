@@ -1,4 +1,5 @@
 using System.Diagnostics.Contracts;
+using SiteDeCursos.SharedContext;
 
 namespace SiteDeCursos.ContentContext
 {
