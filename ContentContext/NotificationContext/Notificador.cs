@@ -4,14 +4,21 @@ namespace SiteDeCursos.NotificationContext
     {
         public List<Notificacao> Notificacoes { get; set; }
 
-        public void Add(Notificacao notificacao)
+        public Notificador()
+        {
+            Notificacoes = new List<Notificacao>();
+        }
+
+        public void AddNotificacao(Notificacao notificacao)
         {
             Notificacoes.Add(notificacao);
         }
 
-        public void AddRange(IEnumerable<Notificacao> notificacao)
+        public void AddNotificacoes(IEnumerable<Notificacao> notificacao)
         {
             Notificacoes.AddRange(notificacao);
         }
+
+        public bool Invalido => Notificacoes.Any();
     }
 }

@@ -1,3 +1,5 @@
+using SiteDeCursos.NotificationContext;
+
 namespace SiteDeCursos.ContentContext
 {
     public class ItemDeCarreira : ConteudoBase
@@ -5,8 +7,9 @@ namespace SiteDeCursos.ContentContext
         public ItemDeCarreira(int ordem, string titulo, string descricao, Curso curso)
         {
             if (curso == null) {
-                throw new System.Exception("O curso não pode ser nulo");
+                AddNotificacao(new Notificacao("Curso", "Curso inválido"));
             }
+
             Ordem = ordem;
             Titulo = titulo;
             Descricao = descricao;
@@ -16,6 +19,6 @@ namespace SiteDeCursos.ContentContext
         public int Ordem { get; set; }
         public string Titulo { get; set; }
         public string Descricao { get; set; }
-        public Curso Curso { get; set; }
+        public Curso? Curso { get; set; }
     }
 }

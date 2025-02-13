@@ -51,8 +51,13 @@ namespace SiteDeCursos
                 foreach(var item in carreira.Items.OrderBy(x => x.Ordem))
                 {
                     Console.WriteLine($"{item.Ordem} - {item.Titulo}");
-                    Console.WriteLine(item.Curso.Titulo);
-                    Console.WriteLine(item.Curso.Nivel);
+                    Console.WriteLine(item.Curso?.Titulo);
+                    Console.WriteLine(item.Curso?.Nivel);
+
+                    foreach (var notificacao in item.Notificacoes)
+                    {
+                        Console.WriteLine($"{notificacao.Propriedade} - {notificacao.Mensagem}");
+                    }
                 }
             }
         }
