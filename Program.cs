@@ -1,6 +1,7 @@
 using System;
 using SiteDeCursos.ContentContext;
 using System.Linq;
+using SiteDeCursos.SubscriptionContext;
 
 namespace SiteDeCursos
 {
@@ -59,6 +60,10 @@ namespace SiteDeCursos
                         Console.WriteLine($"{notificacao.Propriedade} - {notificacao.Mensagem}");
                     }
                 }
+
+                var assinaturaPayPal = new AssinaturaPayPal();
+                var estudante = new Estudante();
+                estudante.CriarAssinatura(assinaturaPayPal);
             }
         }
     }
